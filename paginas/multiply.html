@@ -2,7 +2,7 @@
 <html lang="en" style="height:100%;">
     <head> 
         <meta charset="utf-8"> 
-        <title>Tabla del 2</title>
+        <title>Evaluacion</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <meta name="keywords" content="pinegrow, blocks, bootstrap"/>
         <meta name="description" content="Aprender tablas"/>
@@ -17,6 +17,8 @@
         <link href="../css/plugins.css" rel="stylesheet">
         <link href="../css/blocks.css" rel="stylesheet">
         <link href="../css/custom.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="../css/style.css">
         <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->         
         <!--[if lt IE 9]>
       <script src="js/html5shiv.js"></script>
@@ -24,6 +26,9 @@
     <![endif]-->         
     </head>     
     <body data-spy="scroll" data-target="nav" class="bg-black">
+        <audio id="myAudio">
+            <source src="../wrong.mp3" type="audio/mpeg">
+        </audio>
         <header id="header-1" class="header-1">
             <!-- Navbar -->
             <nav class="headroom headroom--pinned main-nav navbar-fixed-top" style="background-image:url('../images/fondop2.png');   background-size:contain;
@@ -101,7 +106,7 @@
                                     </ul>                                     
                                 </div>
                             </li>
-                            <!--//dropdown-->                             
+                            <!--//dropdown-->
                             <li class="nav-item">
                                 <button type="button" class="bg-aqua btn btn-default white">
                                     <a href="multiply.html">Evaluacion</a>
@@ -123,48 +128,32 @@
                 <div class="blog-1 content-block" style="background-image:url('../images/fondow.jpg');">
                     <div class="container text-center">
                         <div class="underlined-title">
-                            <h1 class="white">Tabla del 2</h1>
+                            <h1 class="white">Evaluacion</h1>
                         </div>
                         <div class="col-sm-10 col-sm-offset-1">
-                            <div class="post">
-                                <h2 class="text-justify white">Cualquier número que multipliquemos por 2 nos resulta el doble del número, por ello, siempre nos dará como resultado un número par.</h2>
-                                <img class="img-responsive img-rounded" src="../images/tabla2.png">
+                            <div class="post text-center">
+                                <h2 class="text-center white">A continuacion...</h2>
+                                <h2 class="text-center white">¡Pondras a prueba todo lo aprendido!</h2>
                             </div>
                             <hr>
-                            <div class="post">
-                                <h1 class="white">Explicación</h1>
-                                <div class="row">
-                                    <div class="col-sm-10 col-sm-offset-1">
-                                        <h4 class="text-justify white">Por ejemplo, en una mesa tenemos 2 monedas, llega un familiar y nos dice que nos dará el doble de las monedas, esto significa que nos dio otras 2 monedas,  al sumar este par de 2 monedas tendremos 4 monedas en total.</h4>
-                                        <img class="img-responsive img-rounded responsive" src="../images/exp2.png" width="500">
+                            <div class="wrapper">
+                                <div class="bg-deepocean equation">
+                                    <h1 id="num1" style="color:#FE4A49"></h1>
+                                    <h1 style="color: #2AB7CA">*</h1>
+                                    <h1 id="num2" style="color: #FED766">1</h1>
+                                    <h1 style="color: #F86624">=</h1>
+                                    <h1 style="color: gray">?</h1>
+                                </div>
+                                <div class="answer-options">
+                                    <div class="options" style="background-color: #FE4A49;">
+                                        <h1 id="option1">1</h1>
                                     </div>
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="bg-black col-sm-10 col-sm-offset-1">
-                                <h1 class="white">Actividad</h1>
-                                <h3 class="white">En la despensa José tiene 2 donas, llega su amiga Lucía y le dice que tiene 2 veces más que él,</h3>
-                                <h3 class="white">¿Cuántas donas tiene Lucy?</h3>
-                                <div class="row"> 
-                                    <div class="col-md-4">
-                                        <img class="img-rounded img-responsive" src="../images/donas.png">
-                                    </div>                                     
-                                    <div class="col-md-3">
-                                        <img class="img-rounded img-responsive" src="../images/xmult.png">
-                                    </div>                                     
-                                    <div class="col-md-4">
-                                        <img class="img-rounded img-responsive" src="../images/2gif.gif">
-                                    </div>                                     
-                                </div>
-                                <div class="text-center">
-                                    <br>
-                                    <h4 class="white">Selecciona la respuesta</h4>
-                                    <a tabindex="0" class="btn btn-info btn-lg" role="button" data-placement="bottom" data-toggle="popover" data-trigger="focus" data-content="Incorrecto" data-dismiss="500">5</a>
-                                    &nbsp;
-                                    <a tabindex="0" class="btn btn-danger btn-lg" role="button" data-placement="bottom" data-toggle="popover" data-trigger="focus" data-content="Incorrecto" data-dismiss="500">20</a>
-                                    &nbsp;
-                                    <a tabindex="0" class="btn btn-lg btn-warning" role="button" data-placement="bottom" data-toggle="popover" data-trigger="focus" data-content="¡Correcto!" data-dismiss="500">4</a>                                    &nbsp;
-                                    <a tabindex="0" class="btn btn-lg btn-success" role="button" data-placement="bottom" data-toggle="popover" data-trigger="focus" data-content="Incorrecto" data-dismiss="500">8</a>
+                                    <div class="options" style="background-color: #2AB7CA;">
+                                        <h1 id="option2">2</h1>
+                                    </div>
+                                    <div class="options" style="background-color: #FED766;">
+                                        <h1 id="option3">3</h1>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -178,10 +167,10 @@
                     <!-- /.container -->
                     <ul class="pager"> 
                         <li class="previous">
-                            <a href="tablad1.html" class="bg-black-hover bg-transparent white white-hover"><img class="brand-img img-responsive" src="../images/1.png">Ir a la Tabla del 1</a>
+                            <a href="tablad10.html" class="bg-black-hover bg-transparent white white-hover"><img class="brand-img img-responsive" src="../images/10.png">Ir a la Tabla del 10</a>
                         </li>                         
                         <li class="next">
-                            <a href="tablad3.html" class="bg-black-hover bg-transparent white white-hover"><img class="brand-img img-responsive" src="../images/3.png">Ir a la Tabla del 3</a>
+                            <a href="selectortablas.html" class="bg-black-hover bg-transparent white white-hover"><img class="brand-img img-responsive" src="../images/multipers.png">Ir a seleccionar tablas</a>
                         </li>                         
                     </ul>
                 </div>
@@ -201,6 +190,7 @@
         <script type="text/javascript" src="../js/plugins.js"></script>
         <script src="https://maps.google.com/maps/api/js?sensor=true"></script>
         <script type="text/javascript" src="../js/bskit-scripts.js"></script>         
+        <script src="../multiply.js"></script>
         <script>
     $(function() {
     $('[data-toggle="popover"]').popover();
